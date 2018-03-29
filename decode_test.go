@@ -703,10 +703,10 @@ var unmarshalTests = []struct {
 	{
 		"First occurrence: &anchor Foo\nSecond occurrence: *anchor\nOverride anchor: &anchor Bar\nReuse anchor: *anchor\n",
 		map[interface{}]interface{}{
-			"Reuse anchor":      "Bar",
 			"First occurrence":  "Foo",
 			"Second occurrence": "Foo",
 			"Override anchor":   "Bar",
+			"Reuse anchor":      "Bar",
 		},
 	},
 	// Single document with garbage following it.
